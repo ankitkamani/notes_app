@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
                   snapshot.child('id').value.toString(),
                   snapshot.child("title").value.toString(),
                   snapshot.child('description').value.toString()).then((value) {
-                    Get.snackbar('Like Note', 'Successfully add To Likes Note');
+                    Get.snackbar('Like Note', 'Successfully add To Likes Note',snackPosition: SnackPosition.BOTTOM);
               });
             },
             child: Badge(
